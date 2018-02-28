@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        
+        
+        <!-- 碎片可以在事务启动 也可以layout中直接加载 启动方式包括静态和动态加载 -->
+        
+        <fragment 
+            android:id="@+id/fragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:name="android.te33.Titlefragment"/>        
+       
+        <FrameLayout 
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qq"
+                    android:id="@+id/bt_qq"/>
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wechat"
+                    android:id="@+id/bt_wechat"/>
+                
+                 
+            </LinearLayout>
+            
+            
+            
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        
+        <LinearLayout 
+            
+            android:orientation="horizontal"
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/ll_province">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省份"/>
+        
+        <Spinner 
+            android:id="@+id/sp_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_city">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市"/>
+        
+        <Spinner 
+            android:id="@+id/sp_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+        
+        
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看该城市的天气预报"></Button>
+    
+    
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        <LinearLayout 
+            android:layout_marginBottom="20dp"
+        	android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/day1">
+        
+         
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day1_img1"
+                android:src="@drawable/weather"/>
+            
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day1_img2"
+                android:src="@drawable/weather"/>
+            
+            <TextView 
+                android:layout_marginLeft="20dp"
+                android:id="@+id/day1_Content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="天气详情位置"/>
+            
+        
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout 
+        	android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/day2"
+        	android:layout_marginBottom="20dp">
+        
+         
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day2_img1"
+                android:src="@drawable/weather"/>
+            
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day2_img2"
+                android:src="@drawable/weather"/>
+            
+            <TextView 
+                android:layout_marginLeft="20dp"
+                android:id="@+id/day2_Content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="天气详情位置"/>
+            
+        
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout 
+            android:layout_marginBottom="20dp"
+        	android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/day3">
+        
+            
+         
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day3_img1"
+                android:src="@drawable/weather"/>
+            
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/day3_img2"
+                android:src="@drawable/weather"/>
+            
+            <TextView 
+                android:layout_marginLeft="20dp"
+                android:id="@+id/day3_Content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="天气详情位置"/>
+            
+        
+        </LinearLayout>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   	</LinearLayout>
+    
+    
+    <TextView 
+        android:id="@+id/today_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="今日天气详情blabla"
+        />
+    
+    </LinearLayout>
+
+</RelativeLayout>

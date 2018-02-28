@@ -1,0 +1,412 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:id="@+id/L"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/color1">
+        
+        <LinearLayout
+            android:id="@+id/L1" 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            
+            >
+            
+            <LinearLayout
+                android:id="@+id/L11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <ImageView 
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/tj"
+                    />
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/L12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <ImageView 
+                    android:layout_width="235dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pic360"
+                    />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/L2" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+            
+            <LinearLayout
+                android:id="@+id/L21"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                >
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mes"
+                    android:layout_gravity="center"
+                     />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="短信拦截"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/L22"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/wifi"
+                    android:layout_gravity="center"
+                    />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网络设置"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+            
+            
+        
+            
+        </LinearLayout>
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/L3" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+            
+            <LinearLayout
+                android:id="@+id/L31"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                >
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/set"
+                    android:layout_gravity="center"/>
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置监控"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/L32"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/tele"
+                    android:layout_gravity="center"/>
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通话监控"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/L4" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+            
+            <LinearLayout
+                android:id="@+id/L41"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                >
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5" />
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bh"
+                    android:layout_gravity="center"
+    
+                    />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="宝盒"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/L42"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/search"
+                    android:layout_gravity="center"
+
+                    />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流量监控"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/L5" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+            
+            <LinearLayout
+                android:id="@+id/L51"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                >
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"  />
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/tele"
+                    android:layout_gravity="center"
+                    
+                    />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快速拨号"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/L52"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                    
+                    <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gray2"
+                    android:layout_gravity="fill"
+                    android:alpha="0.5"/>
+                    
+                    <ImageView 
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/tjj"
+                    android:layout_gravity="center"
+                    
+                    />
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="系统体检"
+                        android:layout_gravity="center|bottom"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@android:id/tabhost">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffaa">
+            
+            <!-- 要显示的所有内容都要放到帧布局里
+                                  法一：每一个界面设置一个完整的layout文件 然后用include命令包含进来
+                                  法二：直接四个线性布局得了 -->
+            <!-- 定义第一个标签页的内容 -->
+            <LinearLayout 
+                android:id="@+id/ltab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人列表"/>
+            </LinearLayout>    
+            
+            <!-- 定义第二个标签页的内容 -->
+            <LinearLayout 
+                android:id="@+id/ltab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最近消息列表"/>
+            </LinearLayout>    
+            
+            <!-- 定义第三个标签页的内容 -->
+            <LinearLayout 
+                android:id="@+id/ltab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查找列表"/>
+            </LinearLayout>    
+            
+            <!-- 定义第四个标签页的内容 -->
+            <LinearLayout 
+                android:id="@+id/ltab4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最近通话列表"/>
+            </LinearLayout>    
+                 
+            
+            
+        </FrameLayout>
+        
+        
+        
+        
+        <!-- 标签页 -->
+        <TabWidget 
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TabWidget>
+        
+    </LinearLayout>
+
+    <!-- tabhost tabs tabcontent 这些id都是固定的 -->
+    
+    
+    
+ 
+</TabHost>

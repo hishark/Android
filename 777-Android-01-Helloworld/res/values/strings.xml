@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">777-Android-01-Helloworld</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="say_yeah">Yeah!</string>
+    <string name="title_activity_my_activity3">MyActivity3</string>
+
+</resources>

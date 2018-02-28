@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:paddingLeft="30dp"
+    android:paddingTop="5dp"
+    android:gravity="center_vertical"
+   
+    >
+    
+     
+    
+    
+    <TextView 
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:id="@+id/greenball"
+        />
+    
+    <ImageView 
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/smallflag"
+        android:layout_marginLeft="20dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenScore"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"/>
+    
+    
+
+</LinearLayout>

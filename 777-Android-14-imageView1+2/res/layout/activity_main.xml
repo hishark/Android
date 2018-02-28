@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll"
+            android:gravity="center"
+            >
+            
+            
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            
+            <Button 
+                android:id="@+id/bt_last"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="上一张"
+                android:layout_marginRight="5dp"/>
+            <Button 
+                android:id="@+id/bt_next"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="下一张"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            
+            <Button 
+                android:id="@+id/bt_amplify"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="放  大"
+                android:layout_marginRight="5dp"/>
+            <Button 
+                android:id="@+id/bt_reduce"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="缩  小"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            
+            <Button 
+                android:id="@+id/bt_left"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="左  转"
+                android:layout_marginRight="5dp"
+                />
+            <Button 
+                android:id="@+id/bt_right"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="右  转"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

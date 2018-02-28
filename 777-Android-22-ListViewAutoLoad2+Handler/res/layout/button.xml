@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:text="Load More..."
+    android:background="#FFB6C1"
+    android:shadowColor="#000000">
+    
+
+</Button>

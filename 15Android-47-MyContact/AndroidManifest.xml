@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jxnu.edu.cn.x3321"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.MyContactActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.AddContactActivity"
+            android:label="@string/title_activity_add_contact" >
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.SearchContactActivity"
+            android:label="@string/title_activity_search_contact" >
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.AboutContactActivity"
+            android:label="@string/title_activity_about_contact" >
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.UpdateContactActivity"
+            android:label="@string/title_activity_update_contact" >
+        </activity>
+        <activity
+            android:name="jxnu.edu.cn.x3321.activity.SearchContactListActivity"
+            android:label="@string/title_activity_search_contact_list" >
+        </activity>
+        
+        <!-- 配置URI -->
+        <provider 
+            android:name="jxnu.edu.cn.x3321.contentProvider.MyContentProvider"
+            android:authorities="jxnu.edu.cn.x3321"
+            android:exported="true"/>
+            
+             <!-- 第三行无所谓 重点是一二行不要忘记了 -->
+        
+    </application>
+
+</manifest>

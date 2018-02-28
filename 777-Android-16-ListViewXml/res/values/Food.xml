@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food">
+        <item >小龙虾</item>
+        <item >肉包子</item>
+        <item >年糕</item>
+        <item >排骨</item>
+        <item >火锅</item>
+        <item >大闸蟹</item>
+        <item >披萨</item>
+        <item >牛蛙</item>
+        <item >牛排</item>
+        <item >小炒肉</item>
+        <item >干锅花菜</item>
+        <item >我饿了</item>
+    </string-array>
+</resources>
